@@ -84,6 +84,7 @@ namespace WTFDanmaku {
         if (FAILED(hr))
             return hr;
 
+#pragma warning(suppress : 4996)
         mD2DFactory->GetDesktopDpi(&mDpiX, &mDpiY);
         return hr;
     }
